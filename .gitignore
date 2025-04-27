@@ -1,0 +1,9 @@
+# Ignore large dataset files
+kitti/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore other temporary files
+*.log
+__pycache__/
