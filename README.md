@@ -24,13 +24,15 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 ## Setup
 1. Clone this repository:
 
-      git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git cd lidar-point-cloud-processing
+      git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git
 
-2. Install dependencies:
+      cd lidar-point-cloud-processing
+
+3. Install dependencies:
 
       pip install open3d numpy
 
-3. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
-4. Run the notebook:
+4. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
+5. Run the notebook:
 
-      jupyter notebook lidar_processing.ipynb
+      lidar_processing.ipynb
