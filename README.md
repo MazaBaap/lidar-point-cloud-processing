@@ -1,14 +1,19 @@
-# LiDAR Point Cloud Processing
+# LiDAR Processing Pipeline
 
-This project processes LiDAR point cloud data from the KITTI dataset using Open3D. The pipeline includes:
-- Loading the raw point cloud
-- Downsampling with a voxel grid
-- Filtering noise using statistical outlier removal
-- Segmenting ground vs. objects using RANSAC
-- Clustering obstacles using DBSCAN
-- Labeling clusters as "Car" or "Pedestrian" based on size
-- Processing a sequence of frames
-- **Unique Feature**: 3D bounding boxes for object detection
+This project processes LiDAR point cloud data from the KITTI dataset for object segmentation and labeling, tailored for Advanced Driver Assistance Systems (ADAS) applications.
+
+## Overview
+- **Dataset**: KITTI Raw (2011_09_26_drive_0005_sync)
+- **Tools**: Open3D, Python, NumPy, Matplotlib
+- **Steps**: 
+  - Load the raw point cloud
+  - Downsample with a voxel grid
+  - Filter noise using statistical outlier removal
+  - Segment ground vs. objects using RANSAC
+  - Cluster obstacles using DBSCAN
+  - Label clusters as "Car" or "Pedestrian" based on size
+  - Process a sequence of frames
+  - **Unique Feature**: 3D bounding boxes for object detection
 
 ## Screenshots
 - **Raw Point Cloud**  
@@ -34,17 +39,26 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 - `numpy`
 
 ## Setup
-1. Clone this repository:
 
+1. Clone this repository:
+      ```bash
       git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git
 
       cd lidar-point-cloud-processing
 
-3. Install dependencies:
-
+2. Install dependencies:
+      ```bash
       pip install -r requirements.txt
 
-4. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
-5. Run the notebook:
-
+3. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
+4. Run the notebook:
+      ```bash
       lidar_processing.ipynb
+
+## Experiment with Parameters
+The parameter values used in this pipeline (e.g., voxel size, eps, min_points, distance thresholds) were chosen as a starting point but may not be optimal for all scenarios. We encourage you to explore and adjust these parameters in `lidar_processing.ipynb` to improve results for your specific use case. Have fun experimenting!
+- **Examples to Try**:
+  - Voxel size (downsampling): 0.05, 0.2
+  - DBSCAN eps: 0.3, 0.7
+  - DBSCAN min_points: 5, 20
+  - RANSAC distance_threshold: 0.2, 0.5
