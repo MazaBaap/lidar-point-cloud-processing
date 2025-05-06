@@ -39,7 +39,10 @@ This project processes LiDAR point cloud data from the KITTI dataset for object 
 - `numpy`
 
 ## Setup
+<<<<<<< HEAD
 
+=======
+>>>>>>> c488bcca558b85077303f100a8feeeefe73727df
 1. Clone this repository:
       ```bash
       git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git
@@ -54,6 +57,8 @@ This project processes LiDAR point cloud data from the KITTI dataset for object 
 4. Run the notebook:
       ```bash
       lidar_processing.ipynb
+
+5. (Optional) Generate .pcd files by running the sequence processing cells, which will be saved in the output/ directory.
 
 ## Experiment with Parameters
 The parameter values used in this pipeline (e.g., voxel size, eps, min_points, distance thresholds) were chosen as a starting point but may not be optimal for all scenarios. We encourage you to explore and adjust these parameters in `lidar_processing.ipynb` to improve results for your specific use case. Have fun experimenting!
