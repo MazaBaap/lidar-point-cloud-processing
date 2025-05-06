@@ -41,7 +41,7 @@ This project processes LiDAR point cloud data from the KITTI dataset for object 
 ## Setup
 1. Clone this repository:
       ```bash
-      git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git
+      git clone https://github.com/hrithikchimbalkar/lidar-point-cloud-processing.git
 
       cd lidar-point-cloud-processing
 
