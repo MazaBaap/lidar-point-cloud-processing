@@ -1,14 +1,19 @@
-# LiDAR Point Cloud Processing
+# LiDAR Processing Pipeline
 
-This project processes LiDAR point cloud data from the KITTI dataset using Open3D. The pipeline includes:
-- Loading the raw point cloud
-- Downsampling with a voxel grid
-- Filtering noise using statistical outlier removal
-- Segmenting ground vs. objects using RANSAC
-- Clustering obstacles using DBSCAN
-- Labeling clusters as "Car" or "Pedestrian" based on size
-- Processing a sequence of frames
-- **Unique Feature**: 3D bounding boxes for object detection
+This project processes LiDAR point cloud data from the KITTI dataset for object segmentation and labeling, tailored for Advanced Driver Assistance Systems (ADAS) applications.
+
+## Overview
+- **Dataset**: KITTI Raw (2011_09_26_drive_0005_sync)
+- **Tools**: Open3D, Python, NumPy, Matplotlib
+- **Steps**: 
+  - Load the raw point cloud
+  - Downsample with a voxel grid
+  - Filter noise using statistical outlier removal
+  - Segment ground vs. objects using RANSAC
+  - Cluster obstacles using DBSCAN
+  - Label clusters as "Car" or "Pedestrian" based on size
+  - Process a sequence of frames
+  - **Unique Feature**: 3D bounding boxes for object detection
 
 ## Screenshots
 - **Raw Point Cloud**  
@@ -35,16 +40,17 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 
 ## Setup
 1. Clone this repository:
-
+      ```bash
       git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git
 
       cd lidar-point-cloud-processing
 
-3. Install dependencies:
+2. Install dependencies:
 
       pip install -r requirements.txt
 
-4. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
-5. Run the notebook:
+3. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
+4. Run the notebook:
 
       lidar_processing.ipynb
+5. (Optional) Generate .pcd files by running the sequence processing cells, which will be saved in the output/ directory.
