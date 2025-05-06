@@ -8,6 +8,7 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 - Clustering obstacles using DBSCAN
 - Labeling clusters as "Car" or "Pedestrian" based on size
 - Processing a sequence of frames
+- **Unique Feature**: 3D bounding boxes for object detection
 
 ## Screenshots
 - **Raw Point Cloud**  
@@ -20,6 +21,12 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
   ![Segmented Point Cloud](segmented.png)
 - **Clustered Obstacles**  
   ![Clustered Obstacles](clustered.png)
+- **Sequence Frame 0**  
+  ![Frame 0](Frame_0.png)
+- **Sequence Frame 4**  
+  ![Frame 4](Frame_4.png)
+- **3D Bounding Boxes**  
+  ![3D Bounding Boxes](bounding_boxes.png)
 
 ## Requirements
 - `Python 3.x`
@@ -35,7 +42,7 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 
 3. Install dependencies:
 
-      pip install open3d numpy
+      pip install -r requirements.txt
 
 4. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
 5. Run the notebook:
