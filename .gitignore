@@ -7,3 +7,4 @@ kitti/
 # Ignore other temporary files
 *.log
 __pycache__/
+output/*.pcd
