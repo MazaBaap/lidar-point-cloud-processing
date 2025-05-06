@@ -39,10 +39,6 @@ This project processes LiDAR point cloud data from the KITTI dataset for object 
 - `numpy`
 
 ## Setup
-<<<<<<< HEAD
-
-=======
->>>>>>> c488bcca558b85077303f100a8feeeefe73727df
 1. Clone this repository:
       ```bash
       git clone https://github.com/MazaBaap/lidar-point-cloud-processing.git
