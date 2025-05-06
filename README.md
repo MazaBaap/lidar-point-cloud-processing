@@ -46,11 +46,11 @@ This project processes LiDAR point cloud data from the KITTI dataset for object 
       cd lidar-point-cloud-processing
 
 2. Install dependencies:
-
+      ```bash
       pip install -r requirements.txt
 
 3. Download the KITTI dataset and place the `.bin` files in a `kitti/` directory within the project.
 4. Run the notebook:
-
+      ```bash
       lidar_processing.ipynb
 5. (Optional) Generate .pcd files by running the sequence processing cells, which will be saved in the output/ directory.
