@@ -5,6 +5,7 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 - Downsampling with a voxel grid
 - Filtering noise using statistical outlier removal
 - Segmenting ground vs. objects using RANSAC
+- Clustering obstacles using DBSCAN
 
 ## Screenshots
 - **Raw Point Cloud**  
@@ -15,6 +16,8 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
   ![Filtered Point Cloud](filtered.png)
 - **Ground vs. Objects**  
   ![Segmented Point Cloud](segmented.png)
+- **Clustered Obstacles**  
+  ![Clustered Obstacles](clustered.png)
 
 ## Requirements
 - `Python 3.x`
