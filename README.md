@@ -7,6 +7,7 @@ This project processes LiDAR point cloud data from the KITTI dataset using Open3
 - Segmenting ground vs. objects using RANSAC
 - Clustering obstacles using DBSCAN
 - Labeling clusters as "Car" or "Pedestrian" based on size
+- Processing a sequence of frames
 
 ## Screenshots
 - **Raw Point Cloud**  
